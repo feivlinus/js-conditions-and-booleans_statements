@@ -9,19 +9,19 @@ let receivedPassword = "password1234";
 const number = 6;
 
 // Part 3: Hotdogs
-const numberOfHotdogs = 5;
+const numberOfHotdogs = 6;
 
 // Part 4: Daytime
 const currentHour = 12;
 
-const statement = "";
+let statement = "";
 
 console.log(statement);
 
 // Part 5: Greeting
 const name = "Archibald";
 
-const greeting = "Hello " + "//enter your code here" + "!";
+const greeting = "Hello";
 
 console.log(greeting);
 
@@ -67,12 +67,26 @@ if (numberOfHotdogs < 5) {
 } else if (numberOfHotdogs > 1000000) {
   pricePerUnit = 0.1;
   hotDogPriceCalculated = numberOfHotdogs * pricePerUnit;
-} else if (numberOfHotdogs === 5) {
-  //Because there was no instruction how much 5 hotdogs would cost :P
-  pricePerUnit = 0;
-  hotDogPriceCalculated = numberOfHotdogs * pricePerUnit;
 }
 
 console.log(
   `${numberOfHotdogs}x Hotdogs, price per Unit ${pricePerUnit}${currency}, Totalsum ${hotDogPriceCalculated}${currency}`
 );
+
+/*
+    Part 4
+*/
+//const currentHour = 17;
+statement = currentHour < 17 ? "Still need to learn..." : "Partytime!!!";
+console.log(statement);
+
+/*
+    Part 5
+*/
+const myCoach = "Archibald";
+const greetingCoach = "Hello Coach!";
+
+const greetingMessage =
+  name === myCoach ? greetingCoach : greeting + " " + `${name}` + "!";
+
+console.log(greetingMessage);
